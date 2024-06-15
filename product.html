@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>UID Assignment 3</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/confirm.css" />
+		<link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'Changa', sans-serif;
+			}
+		</style>
+		<style>
+			.add-to-cart {
+            display: none; /* hide second button */
+        }
+    </style>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<nav class="navbar">
+			<div class="navbar-container">
+				<div class="logo">
+					<img src="./assets/img/logo.png" alt="Logo">
+				</div>
+				<div class="menu-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul class="nav-links">
+					<li><a href="index.html">Shop All</a></li>
+					<li><a href="#">Info Center</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Leave a Review</a></li>
+					<li><a href="#">My Account</a></li>
+				</ul>
+				<div class="search">
+					<a href="search.html"><button type="button" id="searchBtn"><img src="./assets/img/search-icon.png"></button></a>
+				</div>
+				<div class="cart" id="cart">
+					<a href="#"><img src="./assets/img/stroller.png" alt="Shopping Cart"></a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Main Content -->
+		<div class="main-content">
+			<div class="container">
+				<div class="product-images">
+					<img src="./assets/img/cinnamon huntsman.jpg" alt="Large Image">
+					<div class="thumbnail-carousel">
+						<img src="./assets/img/cinnamon huntsman candid.png" alt="Thumbnail 1">
+						<img src="./assets/img/spider anatomy f.jpg" alt="Thumbnail 2">
+						<img src="./assets/img/spider anatomy f.jpg" alt="Thumbnail 3">
+					</div>
+				</div>
+				<div class="product-details">
+					<h1>Cinnamon huntsman</h1>
+					<p>A medium sized species of huntsman found in eucalypt forests around Adelaide, SA. Officially called Isopedella leai, they are a light brown colour with banding on the legs and has a spotted abdomen.</p>
+					<p>Adults have a body length of 30mm, and a leg-span of up to 100mm while Juveniles have a body length of 8-12mm, and a leg-span 20mm</p>
+					<p>Price: $25.00</p>
+					<button class="add-to-cart" style="display: none;"><a href="cart.html">View Cart</a></button>
+					<button class="add1-to-cart" onclick="hideAndShow()">Add to Cart</button>
+				</div>
+
+			</div>
+		</div>
+		<footer class="footer">
+			<p>&copy; 2024 BugFrenzy. All rights reserved.</p>
+		</footer>
+
+		<script>
+			function hideAndShow() {
+				var addButton = document.querySelector('.add1-to-cart');
+				var cartButton = document.querySelector('.add-to-cart');
+				addButton.style.display = 'none'; // hide first button
+				cartButton.style.display = 'inline-block'; // show second button
+				cartButton.addEventListener('click', function() {
+					window.location.href = 'cart.html'; // jump pages
+				});
+			}
+		</script>
+
+	</body>
+</html>
