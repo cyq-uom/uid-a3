@@ -2,7 +2,7 @@ window.onload = function() {
     var aData = [	{
 			"imgUrl": "assets/img/flightless fruit flies.png",
 			"proName": " Flightless Fruit Flies",
-			"proPrice": "20.00",
+			"proPrice": "10.00",
 			"proComm": "9.7"
 		}];
     var oBox = document.getElementById("box");
