@@ -151,6 +151,7 @@
 .buy-button {
 	background-color: #498b67;
 	color: #fff;
+	font-family: Changa;
 	border: none;
 	padding: 10px 20px;
 	border-radius: 5px;
@@ -166,6 +167,7 @@
 	padding: 10px;
 	width: 60%;
 	border: 1px solid #ccc;
+	font-family: Changa;
 	border-radius: 5px;
 }
 
